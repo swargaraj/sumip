@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+
+    &__logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-primary);
+    }
+
+    &__links {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__links a {
+        font-size: 1.15rem;
+        transition: background-color 0.2s ease-in-out;
+        padding: 0.5rem 0.85rem;
+        border-radius: 20px;
+    }
+
+    &__links a:hover {
+        background-color: var(--color-secondary);
+    }
+
+    &__btn_group {
+        display: flex;
+        gap: 8px;
+    }
+}

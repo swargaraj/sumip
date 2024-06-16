@@ -1,0 +1,46 @@
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    border-radius: 10000px;
+    width: max-content;
+    height: max-content;
+
+    &--dark {
+        background-color: var(--color-btn-bg-dark);
+        color: var(--color-btn-text-light);
+    }
+
+    &--light {
+        background-color: var(--color-btn-bg-light);
+        color: var(--color-btn-text-dark);
+    }
+
+    &[data-animation='button'] {
+        transform: scale(0);
+        transform-origin: 50% 50%;
+
+        >span {
+            display: inline-block;
+            width: 0px;
+            overflow: hidden;
+        }
+
+        >span span {
+            display: inline-block;
+            transform: translateY(16px);
+            white-space: nowrap;
+        }
+
+        svg {
+            width: 0px;
+            overflow: hidden;
+            transform: translateX(-8px);
+            opacity: 0;
+        }
+    }
+}

@@ -4,6 +4,13 @@
 
 //@ Base
 @import "./base/reset";
+@import "./base/container";
+
+//@ Components
+@import "./components/button"; 
+
+//@ Layout
+@import "./layout/header";
 
 //@ Typography
 @import "./typography";
