@@ -13,24 +13,22 @@
 
     &__links {
         display: flex;
+        justify-content: center;
         flex: 2;
         gap: 8px;
     }
 
     &__links a {
-        font-size: 1.15rem;
+        font-size: 1rem;
         transition: background-color 0.2s ease-in-out;
         padding: 0.5rem 0.85rem;
         border-radius: 20px;
     }
 
-    &__links a:hover {
-        background-color: var(--color-secondary);
-    }
-
     &__btn_group {
         display: flex;
-        flex: 0;
+        justify-content: flex-end;
+        flex: 1;
         gap: 8px;
     }
 }
