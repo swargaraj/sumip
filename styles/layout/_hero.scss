@@ -1,0 +1,42 @@
+.hero {
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100ch;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    &__info {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid #e1e1e1;
+        border-radius: 999px;
+    }
+
+    &__title {
+        margin-top: 24px;
+        h1 {
+            font-weight: 400;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+        }
+    }
+
+    &__desc {
+        margin-top: 24px;
+        font-size: 1.3rem;
+    }
+
+    .button {
+        margin-top: 24px;
+    }
+    
+    &__note {
+        margin-top: 24px;
+        font-size: 1rem;
+    }
+
+}
