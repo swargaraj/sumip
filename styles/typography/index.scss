@@ -1,17 +1,14 @@
 @font-face {
-    font-family: 'PP Neue Regular';
-    src: url('./fonts/ppneue.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Helvetica Now';
+    src: url('/fonts/Helvetica-Now-Var.ttf') format('truetype');
 }
 
+
 body {
-    font-family: 'PP Neue Regular', sans-serif;
+    font-family: 'Helvetica Now', sans-serif;
     font-size: clamp(16px, 1.6rem, 1.6rem);
     text-size-adjust: 100%;
-    font-weight: 400;
     line-height: 1.5;
-    text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
