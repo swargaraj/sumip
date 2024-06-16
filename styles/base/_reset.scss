@@ -4,7 +4,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    user-select: none;
+}
+
+
+::selection {
+    background: #1f91cf2c;
 }
 
 html:focus-within {
