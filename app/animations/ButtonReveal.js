@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import Observer from "../classes/Observer";
+import SplitType from "split-type";
 
 export default class Button extends Observer {
   constructor({ element }) {
@@ -9,6 +10,26 @@ export default class Button extends Observer {
     this.text = element.querySelector("span span");
     this.textWrapper = element.querySelector("span");
     this.icon = element.querySelector("svg");
+
+    const splitted = new SplitType(this.text, { types: "chars" });
+    this.splitChars = new SplitType(splitted.chars, { types: "chars" });
+
+    this.hoverTimeline = gsap
+      .timeline({
+        default: {
+          duration: 0.5,
+          ease: "power3",
+        },
+        paused: true,
+      })
+      .to(this.textWrapper, { scale: 1.05 }, 0)
+
+    this.element.addEventListener("mouseenter", () => {
+      this.hoverTimeline.play();
+    });
+    this.element.addEventListener("mouseleave", () => {
+      this.hoverTimeline.reverse();
+    });
 
     this.timeline = gsap.timeline({
       default: {
