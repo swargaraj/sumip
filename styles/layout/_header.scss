@@ -14,11 +14,16 @@
     &__links {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex: 2;
         gap: 8px;
+        white-space: nowrap;
     }
 
     &__links div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0.5rem 0.85rem;
     }
 
@@ -80,6 +85,38 @@
         display: flex;
         justify-content: flex-end;
         flex: 1;
-        gap: 8px;
+    }
+
+    &__hamburger {
+        margin-left: 1.25rem;
+        border: none;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .line {
+        width: 40px;
+        height: 1px;
+        background-color: var(--color-primary);
+    }
+    
+    @include below(1024px) {
+        &__links {
+            display: none;
+        }
+
+        &__hamburger {
+            display: flex;
+        }
+    }
+    
+    @include below(480px) {
+        &__btn_group a {
+            display: none;
+        }    
     }
 }

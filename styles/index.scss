@@ -2,6 +2,10 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 
+//@ Typography
+@import "./typography";
+@import "./typography/scale";
+
 //@ Base
 @import "./base/reset";
 @import "./base/base";
@@ -15,7 +19,3 @@
 //@ Layout
 @import "./layout/header";
 @import "./layout/hero";
-
-//@ Typography
-@import "./typography";
-// @import "./typography/type-scale";

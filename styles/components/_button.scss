@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 8px;
-    font-size: 15px;
+    @include fluid-type(650px, 1024px, 12px, 16px);
     font-weight: 400;
     letter-spacing: 0.04em;
     padding: 12px 24px;
