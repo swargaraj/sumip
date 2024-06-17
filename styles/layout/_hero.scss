@@ -19,7 +19,6 @@
     &__title {
         margin-top: 24px;
         width: 60%;
-
         h1 {
             font-weight: 400;
             @include fluid-type(650px, 1024px, 36px, 56px);
@@ -63,7 +62,7 @@
     }
 
 
-    .background::after {
+    .background::after, &__carousel__item img::after {
         content: "";
         position: absolute;
         top: 0;

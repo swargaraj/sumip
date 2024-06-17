@@ -1,7 +1,7 @@
 :root {
     --section-small: 4rem;
-    --section-medium: 16rem;
-    --section-big: 24rem;
+    --section-medium: 8rem;
+    --section-big: 12rem;
 
     @include below(1200px) {
         --section-small: 6.4rem;
