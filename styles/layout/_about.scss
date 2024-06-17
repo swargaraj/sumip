@@ -61,36 +61,84 @@
             flex-direction: row;
             flex-wrap: nowrap;
             width: 100%;
+            height: fit-content;
             gap: 1rem;
 
             .col {
                 flex: 1;
+
+                &__content {
+                    padding: 1rem 0.75rem;
+                    
+                    &__header {
+                        display: flex;
+                        h2 {
+                            font-weight: 400;
+                            @include fluid-type(650px, 1024px, 16px, 24px);
+                        }
+
+                        span {
+                            display: flex;
+                            align-items: center;
+                            margin-left: auto;
+                            rotate: 90deg;
+                        }
+                    }
+
+                    p {
+                        margin-top: 0.85rem;
+                        @include fluid-type(650px, 1024px, 14.2px, 18px);
+                        color: #afafba;
+                    }
+                }
             }
 
             .col__circle {
                 display: flex;
-                margin-top: 3rem;
-                rotate: 30deg;
-
+                margin-top: 5rem;
                 align-items: center;
                 flex-direction: column;
                 
                 span {
-                    padding: 3rem;
+                    padding: 2rem;
                     display: flex;
+                    flex-direction: column;
+                    rotate: 15deg;
                     align-items: center;
                     aspect-ratio: 1/1;
                     border: 1px solid #d6d6d6;
                     border-radius: 999px;
+                    font-size: 18px;
+                    transition: background-color 0.2s ease-in-out;
+
+                    svg {
+                        rotate: 40deg;
+                    }
                 }
+
+                span:hover {
+                    background-color: #f0f0f0;
+                    cursor: pointer;
+                }
+
+                
             }
 
         }
 
         &__thumb {
-            flex: 1
+            flex: 1;
+            position: relative;
+
             img {
                 width: 100%;
+            }
+
+            a {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: 2rem;
             }
         }
     }

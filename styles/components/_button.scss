@@ -22,6 +22,11 @@
         color: var(--color-btn-text-dark);
     }
 
+    &--light--colored {
+        background-color: var(--color-btn-bg-light);
+        color: var(--color-btn-text-dark);
+    }
+
     &[data-animation='button-reveal'] {
         transform: scale(0);
         transform-origin: 50% 50%;
