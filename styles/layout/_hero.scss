@@ -155,4 +155,11 @@
             border-top-right-radius: 0;
         }
     }
+
+    
+    @include below (760px) {
+        &__carousel {
+            display: none;
+        }
+    }
 }
