@@ -21,13 +21,12 @@
         color: var(--color-btn-text-dark);
     }
 
-    &[data-animation='button'] {
+    &[data-animation='button-reveal'] {
         transform: scale(0);
         transform-origin: 50% 50%;
 
         >span {
             display: inline-block;
-            width: 0px;
             overflow: hidden;
         }
 
